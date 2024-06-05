@@ -1,0 +1,33 @@
+<app-nav-bar></app-nav-bar>
+<div class="centro">
+  <div class="centro">
+    <h1 class="centro"><b>ENTRAR</b></h1>
+    <app-continue-with></app-continue-with>
+  </div>
+  <div class="centro">
+    <p>OU</p>
+  </div>
+  <div class="container centro">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="line-input">
+      <div class="group">
+        <input type="text" placeholder="Email" formControlName="email" />
+        <label>Email</label>
+      </div>
+      <div class="group">
+        <input type="password" placeholder="Senha" formControlName="password" />
+        <label>Senha</label>
+      </div>
+      <div>
+        <div class="centro">
+          <button type="submit">Entrar</button>
+        </div>
+        <h3>Não tem conta ?</h3>
+        <a routerLink="/createAccount">
+          <h3><u>Crie uma conta</u></h3>
+        </a>
+      </div>
+    </form>
+  </div>
+
+</div>
+<app-footer-card></app-footer-card>

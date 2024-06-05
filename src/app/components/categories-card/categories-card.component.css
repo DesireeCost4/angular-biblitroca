@@ -1,0 +1,49 @@
+.container-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    
+}
+
+.title-card{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.title-card >a {
+    font-weight: bold;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.title-card > a:hover{
+    color: #612AFF;
+  }
+
+.categories-container > a{
+    text-decoration: none;
+    color: #333;
+}
+
+.categories-container > a > h1{
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    padding: 5px; 
+}
+
+.card-component{
+padding: 20px;
+text-align: center;
+}
+
+
+.card-component > img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}

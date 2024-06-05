@@ -1,0 +1,26 @@
+<!--Iremos utilizar o ngfor para tornar a lista dinamica -->
+<div class="container-main">
+
+  <div class="title">
+    <h1>MAIS VENDIDOS EM EBOOKS</h1>
+    <a routerLink="/biblioteca">Ver mais </a>
+  </div>
+
+
+ <div class="grid-books">
+  <div *ngFor="let book of books; let i = index" class="container-card">
+    <div class="card-book">
+      <div class="img-book">
+        <img [src]="image | async" alt="" srcset="" />
+      </div>
+
+      <div class="info-book">
+        <h4>{{ book.name }}</h4>
+        <p>{{ book.author }}</p>
+        <p>Categoria: {{ book.type }}</p>
+        <span>{{ book.price }}</span>
+      </div>
+    </div>
+  </div>
+  </div>  
+</div>
